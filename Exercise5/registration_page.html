@@ -1,0 +1,144 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>registration page</title>
+        <meta name="keywords" content="HTML, Meta Tags, Metadata" />
+        <meta name="description" content="Registration to Online Learnig Class."/>
+        <meta name="revised" content="27/11/2021"/>
+        <meta charset="UTF-8">
+        <meta name="author" content="IOANNIS KAKATSOS p3180059 -- EFTHYMIOS PAPAGEORGIOU p3180144"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="cvapi.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <img src="images/header_img.png" alt="MOOC logo" >
+            <h1>Online Learnig Class</h1>
+            <fieldset>
+                <nav><a href="index.html">Starting Page</a> 
+                <a href="thematic_areas_page.html">Thematic Areas</a> 
+                <a href="contact_page.html">Contact Page</a> 
+                <a href="about_us_page.html">About Us</a>
+                <a href="registration_page.html">Register</a> </nav>
+            </fieldset>
+        </header> 
+
+
+        <main>
+
+            <h1>User Registration Form</h1>
+
+            <form action="thematic_areas_page.html" method="get">
+
+                <fieldset>
+                    <h1>Personal Details</h1>
+                    <label for="first_name">First name:</label><br>
+                    <input class="ir" type="text" id="first_name" name="first_name" autocomplete="on" required><br>
+                    <label for="last_name">Last name:</label><br>
+                    <input class="ir" type="text" id="last_name" name="last_name" autocomplete="on" required><br>
+                    <label for="email">E-mail:</label><br>
+                    <input class="ir" type="email" id="email" name="email" autocomplete="email" required><br>
+                    <label for="address">Address:</label><br>
+                    <input class="ir" type="text" id="address" name="address" autocomplete="on" required><br>
+                    <label for="date_of_birth">Date of birth:</label><br>
+                    <input class="ir" type="date" id="date_of_birth" name="date_of_birth" required><br>
+                    <label for="country">Country:</label><br>
+                    <input class="ir" type="text" id="country" name="country" required><br>
+                    <label for="phone_number">Phone number:</label><br>
+                    <input class="ir" type="text" id="phone_number" name="phone_number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="xxx xxx xxxx" required title="ex. 111 111 1111"><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <h1>Payment Details</h1>
+                    <label for="credit_card_number">Credit card number:</label><br>
+                    <input class="ir" id="credit_card_number" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required title="ex. 1111 1111 1111 1111" autocomplete="off"><br>
+                    <label for="change_address">Change address:</label><br>
+                    <input class="ir" type="text" id="change_address" name="change_address" autocomplete="off" required><br>
+                </fieldset><br>
+
+                <fieldset>
+                    <h1>User Credentials</h1>
+                    <label for="username">Ender your username:</label><br>
+                    <input class="ir" type="text" id="username" name="username" autocomplete="off" required><br>
+                    <label for="password">Ender your password:</label><br>
+                    <input class="ir" type="password" id="password" name="password" minlength="8" autocomplete="off" required title="more than 8 characters"><br>
+                    <details>
+                        <summary>Requirements</summary>
+                        <p>Min number of characters 8</p></details>
+                    <label for="password_confirmation">Confirm your password:</label><br>
+                    <input class="ir" type="password" id="password_confirmation" name="password_confirmation" minlength="8" autocomplete="off" required title="more than 8 characters"><br>
+                </fieldset><br>
+
+                <fieldset> 
+                    <h1>Questions About Your Scientific Interests</h1>
+                    <label>1. What is the level of a degree ?</label><br>
+                    <label for="nongraduate">Nongraduate</label>
+                    <input type="radio" id="nongraduate" name="nongraduate">
+                    <label for="bachelor_degree">Bachelor degree</label>
+                    <input type="radio" id="bachelor_degree" name="bachelor_degree">
+                    <label for="masters_degree">Master's degree</label>
+                    <input type="radio" id="masters_degree" name="masters_degree">
+                    <label for="doctorate_degree">Doctorate degree</label>
+                    <input type="radio" id="doctorate_degree" name="doctorate_degree"><br>
+
+                    <label for="graduation_year">2. What is your graduation year ?</label><br>
+                    <input type="number" id="graduation_year" name="graduation_year" min="1950" max="2021"><br>
+
+                    <label for="studies_direction">3. What is your studies direction?</label><br>
+                    <input type="text" id="studies_direction" name="studies_direction"><br>
+
+                    <label for="thematic_area_interest">4. What is your thematic area of interest ?</label><br>
+                    <select id="thematic_area_interest" name="thematic_area_interest">
+                        <option value="computer_Science">Computer Science</option>
+                        <option value="natural_sciences">Natural Sciences</option>
+                        <option value="literature">Literature</option>
+                    </select><br>
+                    
+                    <label for="budget">5. What is your budget ?</label><br>
+                    <input type="number" id="budget" name="budget" min="300" placeholder="in €"><br>
+
+                    <label for="maximum_duration">6. How long is the the maximum duration of a course you are willing to study ?</label><br>
+                    <input type="number" id="maximum_duration" name="maximum_duration" min="1" max="5"><br>
+
+                    <label for="platform">7. Why did you choose our platform ?</label><br>
+                    <input type="text" id="platform" name="platform"><br>
+
+                    <label for="future_choice">8. What are your plans for after graduation ?</label><br>
+                    <input list="future" id="future_choice" name="future_choice" />
+                    <datalist id="future">
+                        <option value="Find a job"></option>
+                        <option value="continue my studies"></option>
+                        <option value="Military service"></option>
+                    </datalist><br>
+
+                    <label for="goal_choice">9. Why do you wish to study ?</label><br>
+                    <input list="goal" id="goal_choice" name="goal_choice" />
+                    <datalist id="goal">
+                        <option value="Career opportunities"></option>
+                        <option value="Scientific interest"></option>
+                    </datalist><br>
+
+                    <label>10. What is the your level of proficiency in english ?</label><br>
+                    <label for="b2">B2</label>
+                    <input type="radio" id="b2" name="b2">
+                    <label for="c1">C1</label>
+                    <input type="radio" id="c1" name="c1">
+                    <label for="c2">C2</label>
+                    <input type="radio" id="c2" name="c2">
+
+                </fieldset><br>
+                <input type="submit" onclick="onClickSubmit()" id="btn_submit" name="Submit">
+
+            </form>
+        </main>
+
+        <footer>
+            <p>Contact : <br>
+            jkakats@outlook.com<br>
+            efth.papag@gmail.com
+            </p>
+        </footer>
+    
+    </body>
+</html>

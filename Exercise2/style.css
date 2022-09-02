@@ -1,0 +1,118 @@
+/*Changes the color of the body to white and eliminating the padding and marging so that we avoid and the sides white space above the header.*/
+body{background-color: white; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*Changes the color of the header to coral and making room the navigation bar.*/
+header {background-color: coral; padding-top: 1rem; margin-bottom: 3rem;}
+/*Changes the color of the footer to coral.*/
+footer {background-color: coral;}
+/*Changes the color of the fieldset to coral and creates a red boarder around it.*/
+fieldset {background-color: Tomato; padding: 1rem; border: 0.5rem; border-style: solid; border-color: red; margin-left: 0px; margin-right: 0px;}
+/*Changes the color of the fieldset that is inside a form to gainsboro.*/
+form > fieldset{background-color: gainsboro}
+/*Changes the h1 size and the font to Times New Roman.*/
+h1 { font-size: 2.5em; font-family : 'Times New Roman', Times, sans-serif; margin: 1rem;}
+/*Changes the h1 that is inside the header size to 70 pixels, the font to Courier New and the color to yellow.*/
+header > h1 { font-size: 5em; color: yellow; font-family: 'Courier New', Courier, monospace; padding: 5rem; padding-left: 20rem;}
+/*Changes the h1 that is inside a section size to 30 pixels.*/
+section > h1 {font-size: 2em; margin-top: 0rem;}
+/*Changes the h1 that is inside an article size to 30 pixels.*/
+article > h1 {font-size: 2em; }
+/*Changes the h1 that is inside a fieldset size to 30 pixels.*/
+fieldset > h1 {font-size: 2em; margin: 0rem; margin-bottom: 1rem;}
+/*Changes the h2 size and the font to Times New Roman.*/
+h2 { font-size: 2em; font-family : 'Times New Roman', Times, sans-serif; margin: 1rem;}
+/*Changes the h2 that is inside an article size to 25 pixels.*/
+section > h2 {font-size: 1.5em; }
+/*Changes the p size and the font to Times New Roman.*/
+p { font-size: 1.25em; font-family : 'Times New Roman', Times, serif; margin: 1rem;}
+/*Changes the p that is inside a footer to italic.*/
+footer > p {font-style: italic; }
+/*Changes the link size and the font to Times New Roman.*/
+a {font-size: 1.25em; font-family : 'Times New Roman', Times, serif;}
+/* unvisited link */
+a:link {
+    color: blue;
+}
+/* visited link */
+    a:visited {
+color: purple;
+}
+/* mouse over link */
+a:hover {
+    color: cyan;
+}
+/* selected link */
+a:active {
+    color: blue;
+}
+/*unvisited link inside the navigation bar.*/
+nav > a:link {
+    color: yellow;
+    text-decoration: none;
+}
+/*visited link inside the navigation bar.*/
+nav > a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+/*mouse over link inside the navigation bar.*/
+nav > a:hover {
+    color: gold;
+    text-decoration: none;
+}
+/*selected link inside the navigation bar.*/
+nav > a:active {
+    color: yellow;
+    text-decoration: none;
+}
+/*unvisited link inside list.*/
+li > a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+/*visited link inside list.*/
+li > a:visited {
+    color: black;
+    text-decoration: none;
+}
+/*mouse over link inside list.*/
+li > a:hover {
+    color: black;
+    text-decoration: none;
+}
+/*selected link inside list.*/
+li > a:active {
+    color: black;
+    text-decoration: none;
+}
+/*Changes the links that are inside the navigation bar size and creates an orange border around them */
+nav > a { font-size: 1.5em; border: 0.5rem; padding: 0.5rem; border-style: solid; border-color: orange; margin: 0.5rem; margin-left: 0.1em; margin-right: 0.1em;}
+/**/
+section > a {margin: 1rem;}
+/* Changes the list elements size and the font to Times New Roman*/
+li {font-size: 1.25em; font-family : 'Times New Roman', Times, serif;}
+/*Changes the label size*/
+label {font-size: 1.25em;}
+/* Changes the input that is inside a form size, font to Times New Roman, color to Gainsboro and creates a red border around it */
+form > input{font-size: 1.25em; font-family : 'Times New Roman', Times, serif; background-color: gainsboro; border: 0.5rem; border-style: solid; border-color: red; }
+/*Adjusts the image size to 300x200*/
+img{margin : 1rem; width : 300px; height : 200px;}
+/*Eliminates the margin of the images inside a section*/
+section > img{margin-bottom: 0rem;}
+/*Adjusts the image that is inside a header size to 200x200*/
+header > img {margin : 2rem ; float: left; width : 200px; height : 200px;}
+/*Adjusts the image that is inside an article size to 200x200*/
+article > img {width : 200px; height : 200px;}
+/*Creates a coral border around a section*/
+section {padding: 2rem; border: 0.5rem; border-style: solid; border-color: coral; margin: 1rem;}
+/*Adjusts the margin of the form*/
+form {margin: 1rem;}
+
+#comments{
+    height: 10em;
+    width: 40em;
+}

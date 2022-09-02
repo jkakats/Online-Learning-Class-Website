@@ -1,0 +1,345 @@
+/*Creating new font family*/
+@font-face {
+    font-family: "mc";
+    src: url(minecraftfont.woff);
+}
+
+/*Changes the color of the body to white and eliminating the padding and marging so that we avoid and the sides white space above the header.*/
+body{background-color: white; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+}
+/*Changes the color of the header to coral and making room the navigation bar.*/
+header {background-color: coral; padding-top: 1rem; margin-bottom: 3rem; grid-row: auto;position: fixed; top: 0; width: 100%;}
+/*Specifies the location of the main and gives it 25rem of space with the header*/
+main{grid-row: auto; margin-top: 25rem;}
+/*Changes the color of the footer to coral.*/
+footer {background-color: coral; grid-row: auto;}
+/*Changes the color of the fieldset to coral and creates a red boarder around it.*/
+fieldset {background-color: Tomato; padding: 0.5rem; border: 0.2rem; border-style: solid; border-color: red; margin-left: 0px; margin-right: 0px;}
+/*Changes the color of the fieldset that is inside a form to gainsboro.*/
+form > fieldset{background-color: gainsboro; border-radius: 1em;}
+/*Changes the h1 size and the font to Times New Roman.*/
+h1 { font-size: 2.5em; font-family : 'Times New Roman', Times, sans-serif; margin: 1rem;}
+/*Changes the h1 that is inside the header size, the font to mc and the color to yellow.*/
+header > h1 { font-size: 5em; color: yellow; font-family: 'mc', monospace; padding: 5rem; padding-left: 20rem;}
+/*Changes the h1 that is inside a section size.*/
+section > h1 {font-size: 2em; margin-top: 0rem;}
+/*Changes the h1 that is inside an article size.*/
+article > h1 {font-size: 2em; }
+/*Changes the h1 that is inside a fieldset size.*/
+fieldset > h1 {font-size: 2em; margin: 0rem; margin-bottom: 1rem;}
+/*Changes the h2 size and the font to Times New Roman.*/
+h2 { font-size: 2em; font-family : 'Times New Roman', Times, sans-serif; margin: 1rem;}
+/*Changes the h2 that is inside an article size.*/
+section > h2 {font-size: 1.5em; }
+/*Changes the p size and the font to Times New Roman.*/
+p { font-size: 1.25em; font-family : 'Times New Roman', Times, serif; margin: 1rem;}
+/*Changes the p that is inside a footer to italic.*/
+footer > p {font-style: italic; }
+/*Changes the link size and the font to Times New Roman.*/
+a {font-size: 1.25em; font-family : 'Times New Roman', Times, serif;}
+/* unvisited link */
+a:link {
+    color: blue;
+}
+/* visited link */
+    a:visited {
+color: purple;
+}
+/* mouse over link */
+a:hover {
+    color: cyan;
+}
+/* selected link */
+a:active {
+    color: blue;
+}
+/*unvisited link inside the navigation bar.*/
+nav > a:link {
+    color: yellow;
+    text-decoration: none;
+}
+/*visited link inside the navigation bar.*/
+nav > a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+/*mouse over link inside the navigation bar.*/
+nav > a:hover {
+    color: gold;
+    text-decoration: none;
+}
+/*selected link inside the navigation bar.*/
+nav > a:active {
+    color: yellow;
+    text-decoration: none;
+}
+/*unvisited link inside list.*/
+li > a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+/*visited link inside list.*/
+li > a:visited {
+    color: black;
+    text-decoration: none;
+}
+/*mouse over link inside list.*/
+li > a:hover {
+    color: black;
+    text-decoration: none;
+}
+/*selected link inside list.*/
+li > a:active {
+    color: black;
+    text-decoration: none;
+}
+/*Changes the links that are inside the navigation bar size  and creates an orange border around them */
+nav > a { font-size: 1.5em; border: 0.2rem; padding: 0.5rem; border-style: solid; border-color: orange; margin: 0.5rem; margin-left: 0.1em; margin-right: 0.1em;}
+/**/
+section > a {margin: 1rem;}
+/* Changes the list elements size and the font to Times New Roman*/
+li {font-size: 1.25em; font-family : 'Times New Roman', Times, serif;}
+/*Changes the label size to 20 pixels*/
+label {font-size: 1.25em; font-family : 'Times New Roman', Times, serif;}
+/* Changes the input that is inside a form size to 20 pixels, font to Times New Roman, color to Gainsboro and creates a red border around it */
+form > input{font-size: 1.25em; font-family : 'Times New Roman', Times, serif; background-color: gainsboro; border: 0.2rem; border-style: solid; border-color: red; }
+
+fieldset > input{border-radius: 1em;}
+
+/*Changes the backround color to light green when input is valid*/
+.ir:valid {
+  background-color: lightgreen;
+}
+/*Changes the border color to red when input is invalid*/
+.ir:invalid {
+  border-color: red;
+}
+
+fieldset >select{border-radius: 1em;}
+/*Adjusts the image size to 300x200*/
+img {margin : 1rem; height : 75%; width: 75%;}
+/*Eliminates the margin of the images inside a section*/
+section > img{margin-bottom: 0rem;}
+/*Adjusts the image that is inside a header size to 200x200*/
+header > img {margin : 2rem ; float: left; width : 200px; height : 200px;}
+/*Adjusts the image that is inside an article size to 200x200*/
+article > img {width : 200px; height : 200px;}
+/*Creates a coral border around a section*/
+section {padding: 2rem; border: 0.5rem; border-style: solid; border-color: coral; margin: 1rem;}
+/*Adjusts the margin of the form*/
+form {margin: 1rem;}
+/*Defining the navbar as flexbox container*/
+nav {display: flex;
+    flex-flow: row nowrap;
+}
+/*Defining links as flex items with equal distance and size*/
+nav > a:nth-child(n){
+    flex: 0.1;
+}
+/*Defining every thematic area as flexbox container*/
+.thematic_areas > section{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+}
+/*Defining every field of study main tag as flexbox container*/
+.field_of_study > section{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+
+/*Small devices (phones, 600px and down)*/
+@media only screen and (max-device-width: 600px) {
+    /*Specifies the location of the thematic areas and their layout*/ 
+    .thematic_areas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;    
+    }
+     /*Specifies the location of the title*/
+     .thematic_areas_title{
+        grid-column: 1;
+    }
+    /*Specifies the location of the "computer science" thematic area*/
+    .computer_science{
+        grid-column: 1;
+    }
+    /*Specifies the location of the "natural sciences" thematic area*/
+    .natural_sciences{
+        grid-column: 1;
+    }
+    /*Specifies the location of the "literature" thematic area*/
+    .literature{
+        grid-column: 1;
+    }
+    /*Specifies the location and layout of the classes for every field of study*/
+    .field_of_study{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    /*Specifies the location of the title*/
+    .field_of_study_title{
+        grid-column: 1;
+    }
+    /*Specifies the location of the first class*/
+    .class1{
+        grid-column: 1;
+    }
+    /*Specifies the location of the second class*/
+    .class2{
+        grid-column: 1;
+    }
+    /*Specifies the location of the third class*/
+    .class3{
+        grid-column: 1;
+    }
+    /*Specifies the location of the fourth class*/
+    .class4{
+        grid-column: 1;
+    }
+    /*Specifies the location of the fifth class*/
+    .class5{
+        grid-column: 1;
+    }
+}
+
+/*Medium devices (tablets, 601px to 991)*/
+@media only screen and (min-device-width: 601px) and (max-device-width: 991px) {
+    /*Specifies the location of the thematic areas and their layout*/ 
+    .thematic_areas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;   
+    }
+    /*Specifies the location of the title*/
+    .thematic_areas_title{
+        grid-column: 1;
+    }
+    /*Specifies the location of the "computer science" thematic area*/
+    .computer_science{
+        grid-column: 1/2;
+    }
+    /*Specifies the location of the "natural sciences" thematic area*/
+    .natural_sciences{
+        grid-column: 2/2;
+    }
+    /*Specifies the location of the "literature" thematic area*/
+    .literature{
+        grid-column: 1/2;
+    }
+    /*Specifies the location and layout of the classes for every field of study*/
+    .field_of_study{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+    }
+    /*Specifies the location of the title*/
+    .field_of_study_title{
+        grid-column: 1;
+    }
+    /*Specifies the location of the first class*/
+    .class1{
+        grid-column: 1/2;
+    }
+    /*Specifies the location of the second class*/
+    .class2{
+        grid-column: 2/2;
+    }
+    /*Specifies the location of the third class*/
+    .class3{
+        grid-column: 1/2;
+    }
+    /*Specifies the location of the fourth class*/
+    .class4{
+        grid-column: 2/2;
+    }
+    /*Specifies the location of the fifth class*/
+    .class5{
+        grid-column: 1/2;
+    }
+}
+
+/*Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-device-width: 992px) {
+    .thematic_areas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*Specifies the location of the title*/
+    .thematic_areas_title{
+        grid-row: 1;
+    }
+    /*Specifies the location of the "computer science" thematic area*/
+    .computer_science{
+        grid-row: 2;
+    }
+    /*Specifies the location of the "natural sciences" thematic area*/
+    .natural_sciences{
+        grid-row: 2;
+    }
+    /*Specifies the location of the "literature" thematic area*/
+    .literature{
+        grid-row: 2;
+    }
+
+    .field_of_study{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*grid-auto-rows: auto;*/
+    }
+    /*Specifies the location of the title*/
+    .field_of_study_title{
+        grid-row: 1;
+    }
+    /*Specifies the location of the first class*/
+    .class1{
+        grid-row: 2;
+    }
+    /*Specifies the location of the second class*/
+    .class2{
+        grid-row: 2;
+    }
+    /*Specifies the location of the third class*/
+    .class3{
+        grid-row: 2;
+    }
+    /*Specifies the location of the fourth class*/
+    .class4{
+        grid-row: 3;
+    }
+    /*Specifies the location of the fifth class*/
+    .class5{
+        grid-row: 3;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    /*Fixes an issue where the header went over the main content of the page in 1000px width or less */
+    main{margin-top: 32rem;}
+    /*Crates equal space between the links in the navigation bar which makes it easier to see in smaller screens*/
+    nav > a:nth-child(n){
+      flex: 1;
+    }
+    header > h1 {font-size: 4em; margin-bottom: -0.5em;}
+    header > img {margin-top: 4rem;}
+    main > h1 {margin-bottom: 3rem;}
+}
+
+/*Changes the size of the comment input*/
+#comments{
+    height: 10em;
+    width: 40em;
+}
